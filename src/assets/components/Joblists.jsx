@@ -36,9 +36,9 @@ const Jobs = ({isHome = false})=>{
 
   return(
     <>
-    <section className=" mt-4 py-3 browse-job-container ">
+    <section className=" mt-4 py-3 browse-job-container bg-danger bg-opacity-10">
       <div className="container-fluid">
-        <h2 className=" text-center fw-bolder browse-job-heading my-4">
+        <h2 className=" text-center text-danger fw-bolder browse-job-heading my-4 ff-rubik">
           {isHome? 'Recent Jobs': 'Browse Jobs'}
         </h2>
         <div className="joblists gap-4 d-block d-sm-grid">

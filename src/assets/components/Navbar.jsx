@@ -5,11 +5,11 @@ import {Link} from 'react-router-dom'
 const Navbar = ()=>{
   return(
     <section>
-      <nav className="navbar navbar-expand">
+      <nav className="navbar navbar-expand bg-danger">
         <div className="container-fluid mx-3"> 
           <div className="navbar-brand ">
            <img src={logo} className="me-3 logo" />
-           <span className="text-white fw-bold d-none d-sm-inline-block">React Jobs</span>
+           <span className="text-white fw-bold d-none d-sm-inline-block ff-rubik">JOB SPHERE</span>
           </div>
           
           <div className="navbar-nav">

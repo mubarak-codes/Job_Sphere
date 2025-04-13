@@ -18,21 +18,21 @@ const JobList = ({ job }) => {
           <h3 className='mfs-4 fw-bold mb-3'>{job.title}</h3>
         </div>
 
-        <div className='mb-3 mfs-2'>{description}</div>
+        <div className='mb-3 mfs-2 opacity-75 mfs-2'>{description}</div>
 
 
-        <div className='text-primary mb-3 mfs-2'>{job.salary} / Year</div>
+        <div className='text-danger mb-3 mfs-2'>{job.salary} / Year</div>
 
         <div className='border border-gray-100 mb-3'></div>
 
         <div className='row mb-4'>
-          <div className='text-orange mb-3 mfs-2'>
+          <div className='text-success mb-3 mfs-2'>
             <i className="bi bi-geo-alt me-1"></i>
             {job.location}
           </div>
           <Link
             to={`/jobs/${job.id}`}
-            className='bg-primary text-white px-4 py-2 rounded text-center mfs-1'
+            className='bg-danger text-white px-4 py-2 rounded text-center mfs-1'
           >
             Read More
           </Link>

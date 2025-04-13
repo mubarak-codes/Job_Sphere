@@ -41,15 +41,15 @@ const AddJobPage = ({addJobSubmit})=>{
 
   return(
     <>
-      <section className="browse-job-container py-3">
+      <section className=" bg-danger bg-opacity-10 browse-job-container py-3">
       <div className="">
         <div
           className="bg-white px-4 py-4 mb-2 card border m-3 mt-5"
         >
-          <form onSubmit={submitForm}>
-            <h2 className=" text-center fw-bold mb-4">Add Job</h2>
+          <form onSubmit={submitForm} className="d-grid ">
+            <h2 className=" text-center fw-bold mb-4 ff-rubik">Add Job</h2>
 
-            <div className="mb-3">
+            <div className="mb-3 ">
               <label htmlFor="type" className="d-block fw-bold mfs-2 mb-2"
                 >Job Type</label>
               <select
@@ -211,7 +211,7 @@ const AddJobPage = ({addJobSubmit})=>{
 
             <div>
               <button
-                className="bg-primary text-white fw-bold py-2 px-4 rounded-5 w-100 mfs-2"
+                className="bg-danger text-white fw-bold py-2  rounded-5 w-100 mfs-2 text-center "
                 type="submit"
               >
                 Add Job

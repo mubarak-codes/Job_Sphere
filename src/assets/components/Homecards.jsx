@@ -10,7 +10,7 @@ const Cards = ()=>{
         For Developers
        </div>
        <div className="for-developers-text fw-normal mb-1">
-        Browse our React jobs and start your career today
+        Browse our software developer jobs and start your career today
        </div>
        <Link className="for-developers-button px-3 card" to="/jobs">
         Browse Jobs
@@ -18,14 +18,14 @@ const Cards = ()=>{
       </div>
 
       {/*for Employers*/}
-      <div className="for-employers card d-flex flex-col align-items-start gap-2">
+      <div className="for-employers bg-danger bg-opacity-10 card d-flex flex-col align-items-start gap-2">
        <div className="fw-bolder fs-5">
         For Employers
        </div>
        <div className="for-employers-text fw-normal mb-1">
         List your job to find the perfect developer for the role
        </div>
-       <Link to="/add-job" className="for-employers-button px-3 card">
+       <Link to="/add-job" className="for-employers-button px-3 card bg-danger">
         Add Job
        </Link>
       </div>

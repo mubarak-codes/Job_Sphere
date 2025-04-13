@@ -33,14 +33,14 @@ const JobPages = ({deleteJob})=>{
       <div className="container m-auto py-3">
         <Link
           to="/jobs"
-          className="flex items-center mfs-1 "
+          className="flex items-center mfs-1 text-danger"
         >
           <i className="fas fa-arrow-left mr-2"></i> Back to Job Listings
         </Link> 
       </div>
     </section>
 
-    <section className="browse-job-container py-5">
+    <section className="browse-job-container bg-danger bg-opacity-10 py-5">
       <div className="container px-4 px-sm-1">
         <div className="row row-cols-1 row-cols-sm-2 pb-5">
           <main className="flex-1-sm">
@@ -48,31 +48,31 @@ const JobPages = ({deleteJob})=>{
               className="bg-white pb-1 card  text-center text-sm-start mfs-1 p-3 mb-4"
             >
               <div className="text-secondary mb-3">{job.type}</div>
-              <h1 className="mfs-9 mfs-6-sm fw-bolder mb-3">
+              <h1 className="mfs-9 mfs-5-sm fw-bolder mb-3">
                 {job.title}
               </h1>
               <div
                 className="mb-4 d-flex justify-content-center justify-content-sm-start"
               >
                 <i
-                  className="fa-solid fa-location-dot text-gold"
+                  className="fa-solid fa-location-dot text-success"
                 ></i>
-                <p className="text-gold ms-1">{job.location}</p>
+                <p className=" ms-1 text-success">{job.location}</p>
               </div>
             </div>
 
             <div className="bg-white p-4 card mb-4">
-              <h3 className="text-indigo mfs-3 fw-bold mb-3">
+              <h3 className="text-danger mfs-3 fw-bold mb-3">
                 Job Description
               </h3>
 
-              <p className="mb-4 mfs-2">
+              <p className="mb-4 mfs-2 opacity-75">
                 {job.description}
               </p>
 
-              <h3 className="text-indigo mfs-3 fw-bold mb-3">Salary</h3>
+              <h3 className="text-danger mfs-3 fw-bold mb-3">Salary</h3>
 
-              <p className="mb-3 mfs-2">{job.salary} / Year</p>
+              <p className="mb-3 mfs-2 opacity-75">{job.salary} / Year</p>
             </div>
           </main>
 
@@ -84,7 +84,7 @@ const JobPages = ({deleteJob})=>{
 
               <div className="mfs-5">{job.company.name}</div>
 
-              <p className="my-2 mfs-2">
+              <p className="my-2 mfs-2 opacity-75">
                 {job.company.description}
               </p>
 
@@ -92,13 +92,13 @@ const JobPages = ({deleteJob})=>{
 
               <div className="mfs-3">Contact Email:</div>
 
-              <p className="my-2 p-2 fw-bold bg-primary-subtle">
+              <p className="my-2 p-2 fw-bold bg-danger bg-opacity-10">
                 {job.company.contactEmail}
               </p>
 
               <div className="mfs-3">Contact Phone:</div>
 
-              <p className="my-2 bg-primary-subtle p-2 fw-bold">{job.company.contactPhone}</p>
+              <p className="my-2 bg-danger bg-opacity-10 p-2 fw-bold">{job.company.contactPhone}</p>
             </div>
 
             {/*<!-- Manage -->*/}
@@ -106,11 +106,11 @@ const JobPages = ({deleteJob})=>{
               <h3 className="mfs-3 fw-bold">Manage Job</h3>
               <Link
                 to={`/edit-job/${job.id}`}
-                className="bg-primary text-white text-center fw-bold py-2 px-4 rounded-5 mt-4  d-block"
+                className="bg-danger text-white text-center fw-bold py-2 px-4 rounded-5 mt-4  d-block"
                 >Edit Job</Link
               >
               <button
-                className="bg-danger text-white fw-bold py-2 px-4 rounded-5 mt-4 d-block" onClick={()=>onDeleteClick(job.id)}
+                className="bg-primary text-white fw-bold py-2 px-4 rounded-5 mt-4 d-block" onClick={()=>onDeleteClick(job.id)}
               >
                 Delete Job
               </button>

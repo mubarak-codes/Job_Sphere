@@ -47,13 +47,13 @@ const EditJobPage = ({updateJobSubmit})=>{
 
   return(
     <>
-      <section className="browse-job-container py-3">
+      <section className="browse-job-container bg-danger bg-opacity-10 py-3">
       <div className="">
         <div
           className="bg-white px-4 py-4 mb-2 card border m-3 mt-5"
         >
           <form onSubmit={submitForm}>
-            <h2 className=" text-center fw-bold mb-4">Update Job</h2>
+            <h2 className=" text-center ff-rubik fw-bold mb-4">Update Job</h2>
 
             <div className="mb-3">
               <label htmlFor="type" className="d-block fw-bold mfs-2 mb-2"
@@ -217,7 +217,7 @@ const EditJobPage = ({updateJobSubmit})=>{
 
             <div>
               <button
-                className="bg-primary text-white fw-bold py-2 px-4 rounded-5 w-100 mfs-2"
+                className="bg-danger text-white fw-bold py-2 px-4 rounded-5 w-100 mfs-2"
                 type="submit"
               >
                 Update Job
