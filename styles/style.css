@@ -1,0 +1,149 @@
+/*general css*/
+button{
+  border: none;
+  background-color: #FFFFFF00;
+}
+
+a{
+  text-decoration: none;
+}
+
+.card{
+  border-radius: 10px;
+  border: none;
+}
+
+.box{
+  box-shadow: 0px 3px 4px #DBDBDB;
+  
+}
+
+
+
+.navbar{
+  background-color: #4438CA;
+  width: 1fr;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 70px;
+  color: white;
+  border-bottom: 1px solid gray;
+}
+
+.nav-item{
+  margin: 0 6px;
+  font-size: 14px;
+  padding: 7px 10px;
+  text-wrap: nowrap;
+}
+
+.nav-item:hover{
+  background-color: black;
+  border-radius: 5px;
+  padding: 7px 10px;
+}
+
+.nav-item:active{
+  background-color: black;
+  border-radius: 5px;
+  padding: 7px 10px;
+}
+
+.logo{
+  width: 55%;
+}
+
+@media (min-width: 576px){
+  .nav-item{
+  font-size: 15px;
+  }
+
+  .logo{
+    width: 15%;
+  }
+}
+
+.hero-text{
+  background-color: #4438CA;
+  height: 240px;
+  color: white;
+}
+
+.hero-2nd{
+  width: 90%;
+}
+
+.for-developers{
+  background-color: #F3F4F6;
+  padding: 23px;
+  box-shadow: 0px 3px 4px #DBDBDB;
+  flex: 1;
+}
+
+.for-developers-text{
+  font-size: 14px;
+}
+
+.for-developers-button{
+  background-color: black;
+  padding: 8px;
+  color: white;
+  font-size: 13px;
+}
+
+.for-employers{
+  background-color: #E1E7FF;
+  padding: 23px;
+  box-shadow: 0px 3px 4px #DBDBDB;
+  flex: 1;
+}
+
+.for-employers-text{
+  font-size: 14px;
+}
+
+.for-employers-button{
+  background-color: #6366F1;
+  padding: 8px;
+  color: white;
+  font-size: 13px;
+}
+
+.browse-job-container{
+  background-color: #EFF6FF;
+}
+
+.browse-job-heading{
+  font-size: 24px;
+  color: #6366F1;
+}
+
+.joblist{
+  flex: 1;
+  font-size: 14px;
+}
+
+@media (min-width: 576px){
+  .joblists{
+    grid-template-columns: 1fr 1fr ;
+  }
+}
+
+.price{
+  color: #6366F1;
+}
+
+.location{
+  color: #9E664F;
+}
+
+.readmore{
+  background-color: #6366F1;
+  height: 40px;
+  width: 100%;
+}
+
+.view-all{
+  font-size: 13px;
+}
